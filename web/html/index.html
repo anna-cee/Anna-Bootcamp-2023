@@ -5,26 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Hello
-    Goodbye
+<style>
+    /* Element selector */
+    h1, #hobbies {
+        color: rgb(3, 25, 136);
+        background-color: rgb(241, 170, 78);
+    }
 
+    /* ID selector */
+    #hobbies { 
+        border: 2px solid green;
+    }
+
+    /* Apply to all li elements that are children of #hobbies 
+    (any element withthat id) */
+    #hobbies li {
+        background: lightblue;
+    }
+    
+    li:hover, #hobbies li:hover {
+        background: yellow;
+    }
+
+    /* Class selector */
+    .big {
+        font-size: 2em;
+    }
+
+</style>
+<body>
     <h1>Hello World</h1>
-    <h2></h2> World</h2>
+    <h2>Hello World</h2>
     <h3>Hello World</h3>
-    <h4></h4>
+    <h4>Hello World</h4>
     <h5>heading 5</h5>
         <h6>heading 6
 
         </h6>
 
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, id!</p>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio nesciunt laudantium vero laborum inventore aliquam, tenetur doloremque quia totam?</p>
+ <p class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio nesciunt laudantium vero laborum inventore aliquam, tenetur doloremque quia totam?</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum praesentium error esse nam sequi?</p>
 
 <img src="http://placekitten.com/300" alt="Cute kitten photo">
 
 <a href="https://google.com/">Go to Google!</a>
+<ul id="hobbies">
+    <li>Coding</li>
+    <li>Cooking</li>
+    <li>Dancing</li>
+</ul>
+<ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
 
 </body>
 
