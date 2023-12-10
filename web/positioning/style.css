@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    background: red
+
+}
+/* Select the 2nd child that is a div*/
+/*
+div:nth-child(2) {
+    background: blue;
+}
+
+
+/* Select the 2nd child of the body regardless of what it is*/
+/*body :nth-child(2) {
+    background: blue;
+}*/
+
+/* z-index specifies grouping and depth like bring to front layers
+otherwise layers appear in order of cascase with later elements showing last or on top*/
+/*absolute positioning is relative to parent element, relative to flow xy axis
+fixed anchors to the browser window and everything else scrolls behind it otherwise saem as absolute*/
+div:nth-of-type(2) {
+    position: absolute;
+    background: blue;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+/*body is implied before div */
+div:nth-of-type(3) {
+    background: green;
+    
+}
+
+/* ul li:nth-of-type(2) required to state parent then child*/
